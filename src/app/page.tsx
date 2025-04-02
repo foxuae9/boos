@@ -25,7 +25,7 @@ export default function Home() {
         <div className="max-w-4xl w-full">
           <div className="text-center space-y-12">
             <h1 className="text-6xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-gradient hover-float">
-              مرحباً بكم في بوس
+              مرحباً بكم في موقعي
             </h1>
             
             <p className="text-xl text-gray-600 bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-lg glow-on-hover">
