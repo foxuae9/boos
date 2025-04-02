@@ -8,7 +8,7 @@ export default function Home() {
           </h1>
           
           <p className="text-xl text-gray-600 bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-lg">
-            تطبيق بسيط وجميل تم إنشاؤه باستخدام Next.js
+            تطبيق بسيط وجميل تم إنشاؤه باستخدام Next.js مع تأثيرات حركية رائعة
           </p>
 
           <div className="flex gap-4 justify-center">
@@ -22,15 +22,15 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             {[
-              { title: 'سريع', color: 'from-indigo-500 to-blue-500' },
-              { title: 'سهل', color: 'from-purple-500 to-pink-500' },
-              { title: 'مرن', color: 'from-pink-500 to-rose-500' }
+              { title: 'سريع', desc: 'أداء فائق مع Next.js', color: 'from-indigo-500 to-blue-500' },
+              { title: 'سهل', desc: 'واجهة سهلة الاستخدام', color: 'from-purple-500 to-pink-500' },
+              { title: 'مرن', desc: 'قابل للتخصيص بالكامل', color: 'from-pink-500 to-rose-500' }
             ].map((feature, index) => (
               <div key={index} className="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
                 <h3 className={`text-xl font-bold bg-gradient-to-r ${feature.color} text-transparent bg-clip-text mb-2`}>
                   {feature.title}
                 </h3>
-                <p className="text-gray-600">وصف مميز للخاصية</p>
+                <p className="text-gray-600">{feature.desc}</p>
               </div>
             ))}
           </div>
