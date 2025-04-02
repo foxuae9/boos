@@ -15,3 +15,44 @@ body {
   color: var(--text);
   min-height: 100vh;
 }
+
+/* تأثيرات إضافية */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hover-float {
+  transition: all 0.3s ease;
+}
+
+.hover-float:hover {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* تأثير الضوء عند التحويم */
+.glow-on-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-on-hover::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.glow-on-hover:hover::after {
+  opacity: 1;
+}

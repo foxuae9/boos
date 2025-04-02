@@ -3,19 +3,19 @@ export default function Home() {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="max-w-2xl w-full">
         <div className="text-center space-y-8">
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-gradient">
+          <h1 className="text-6xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-gradient hover-float">
             مرحباً بكم في بوس
           </h1>
           
-          <p className="text-xl text-gray-600 bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-lg">
+          <p className="text-xl text-gray-600 bg-white/50 backdrop-blur-sm rounded-lg p-6 shadow-lg glow-on-hover">
             تطبيق بسيط وجميل تم إنشاؤه باستخدام Next.js مع تأثيرات حركية رائعة
           </p>
 
           <div className="flex gap-4 justify-center">
-            <button className="px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+            <button className="px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all hover-float">
               ابدأ الآن
             </button>
-            <button className="px-8 py-3 bg-white text-indigo-500 border-2 border-indigo-500 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all">
+            <button className="px-8 py-3 bg-white text-indigo-500 border-2 border-indigo-500 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all glow-on-hover">
               اكتشف المزيد
             </button>
           </div>
@@ -26,7 +26,7 @@ export default function Home() {
               { title: 'سهل', desc: 'واجهة سهلة الاستخدام', color: 'from-purple-500 to-pink-500' },
               { title: 'مرن', desc: 'قابل للتخصيص بالكامل', color: 'from-pink-500 to-rose-500' }
             ].map((feature, index) => (
-              <div key={index} className="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div key={index} className="bg-white/50 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-xl transition-all glow-on-hover hover-float">
                 <h3 className={`text-xl font-bold bg-gradient-to-r ${feature.color} text-transparent bg-clip-text mb-2`}>
                   {feature.title}
                 </h3>
